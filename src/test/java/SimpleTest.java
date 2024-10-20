@@ -15,7 +15,7 @@ public class SimpleTest {
         Assertions.assertTrue(number < 5);
     }
 
-    @ValueSource(strings = {"one", "two" ,"three", "four"})
+    @ValueSource(strings = {"one", "two" ,"five", "four"})
     @ParameterizedTest(name = "Проверяем, что количество символов в слове {0} меньше 5")
     public void test2(String number){
         Integer numberOfLetters = number.length();
