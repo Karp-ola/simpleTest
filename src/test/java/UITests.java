@@ -10,6 +10,7 @@ public class UITests {
     public static void setUp(){
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "120.0");
+        Configuration.headless = true;
     }
 
     @Test
