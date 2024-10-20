@@ -9,6 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class SimpleTest {
 
+    @ValueSource(ints = {1 , 2 , 3, 4})
     @ParameterizedTest(name = "Проверяем, что {0} меньше 5")
     public void test1(int number){
         Assertions.assertTrue(number < 5);
