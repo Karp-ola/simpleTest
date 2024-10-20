@@ -10,7 +10,7 @@ public class UITests {
     @BeforeAll
     public static void setUp(){
       Configuration.browser = System.getProperty("browser", "chrome");
-     // Configuration.headless = true;
+      Configuration.headless = true;
     }
 
     @Test
